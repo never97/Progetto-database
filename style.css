@@ -1,0 +1,156 @@
+.campoDisabilitato {
+  position: relative;
+  display: inline-block;
+  color: red;
+  font-size: 15px;
+}
+
+.campoDisabilitato .campoDisabilitatoText {
+  visibility: hidden;
+  width: 120px;
+  background-color: #db4a3d;
+  color: white;
+  text-align: center;
+  font-family: Cambria;
+  border-radius: 3px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.campoDisabilitato .campoDisabilitatoText::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #db4a3d transparent transparent;
+}
+.campoDisabilitato:hover .campoDisabilitatoText {
+  visibility: visible;
+}
+
+.cerchioRosso {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.cerchioVerde {
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.entroScadenza {
+  position: relative;
+  display: inline-block;
+  color: #24a313;
+  font-size: 15px;
+}
+
+.entroScadenza .entroScadenza_tx {
+  visibility: hidden;
+  width: 120px;
+  background-color: #24a313;
+  color: white;
+  text-align: center;
+  font-family: Cambria;
+  border-radius: 3px;
+  padding: 5px 2px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 200%;
+}
+
+.entroScadenza .entroScadenza_tx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #24a313 transparent transparent;
+}
+.entroScadenza:hover .entroScadenza_tx {
+  visibility: visible;
+}
+
+.ritardo {
+  position: relative;
+  display: inline-block;
+  color: #db4a3d;
+  font-size: 15px;
+}
+
+.ritardo .ritardo_tx {
+  visibility: hidden;
+  width: 160px;
+  background-color: #db4a3d;
+  color: white;
+  text-align: center;
+  font-family: Cambria;
+  border-radius: 3px;
+  padding: 5px 2px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 200%;
+}
+
+.ritardo .ritardo_tx::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #db4a3d transparent transparent;
+}
+.ritardo:hover .ritardo_tx {
+  visibility: visible;
+}
+
+.col-4 {
+  width: 450px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  content: "";
+  position: relative;
+  font-size: 0.8em;
+}
+.col-4:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent 30px, white);
+}
+
+.col-4 .read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.4em;
+
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+}
