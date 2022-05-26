@@ -1,3 +1,5 @@
+Project for the Database Course at Università degli studi di Ferrara, a.y. 2019-2020
+
 ---------------------------------------------------------------------------------------
 Per comodità, abbiamo scelto di includere all'interno del pacchetto zip anche il file
 creation_table.docx per la creazione delle tabelle, il file query_popolamento.sql per 
